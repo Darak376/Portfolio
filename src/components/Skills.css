@@ -1,0 +1,78 @@
+.skills-container {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #ffff;
+}
+
+.skills-container h1 {
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.skills-description {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Updated grid layout for two equal rows */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns per row */
+  grid-template-rows: repeat(2, auto); /* Two rows */
+  gap: 20px;
+  justify-items: center; /* Centering items horizontally */
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.tech-item:hover {
+  transform: translateY(-10px); /* Slight hover lift */
+  background-color: #f0e68c; /* Gold hover effect */
+}
+
+.tech-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.tech-item p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .skills-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .skills-description {
+    font-size: 1rem;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+    grid-template-rows: repeat(auto, auto); /* Adjust rows based on content */
+  }
+
+  .tech-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .tech-item p {
+    font-size: 1rem;
+  }
+}

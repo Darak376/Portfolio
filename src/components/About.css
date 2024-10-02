@@ -1,0 +1,107 @@
+.About-info {
+  display: flex;
+  justify-content: space-between; /* Spread image and text evenly */
+  align-items: center; /* Align items vertically in the middle */
+  padding: 60px; /* Add padding */
+  width: 90%; /* Make it wider */
+  max-width: 1400px; /* Max width for larger screens */
+  margin: 0 auto; /* Center the container horizontally */
+  background-color: white; /* Keep background for contrast */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  text-align: left; /* Ensure text is aligned to the left */
+}
+
+.About-info img {
+  width: 700px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 20px; /* Rounded corners */
+  margin-right: 40px; /* Space between image and text */
+  object-fit: cover; /* Ensure the image fits the container */
+  box-shadow: 0 4px 12px rgb(0, 0, 0); /* Add a subtle shadow */
+}
+
+.About-intro {
+  flex: 1; /* Take up the remaining space */
+  color: black;
+  text-align: left; /* Align text to the left */
+}
+
+.About-intro h1 {
+  font-size: 3rem; /* Larger heading */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.About-intro p {
+  font-size: 1.7rem; /* Increase font size for readability */
+  max-width: 800px; /* Limit text width for readability */
+  line-height: 1.8; /* Increase line height for better spacing */
+  margin: 0; /* No additional margin needed */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .About-info {
+    flex-direction: column; /* Stack the image and text vertically */
+    align-items: center; /* Center align items for smaller screens */
+    padding: 40px;
+  }
+
+  .About-info img {
+    width: 100%; /* Make image responsive */
+    max-width: 400px; /* Limit size of image on medium screens */
+    margin-bottom: 20px; /* Add space below the image */
+  }
+
+  .About-intro {
+    text-align: left; /* Keep text aligned to the left */
+    width: 100%; /* Make text take full width */
+  }
+
+  .About-intro h1 {
+    font-size: 2.5rem; /* Slightly smaller heading */
+  }
+
+  .About-intro p {
+    font-size: 1.4rem; /* Adjust font size */
+    max-width: 600px; /* Limit width for readability */
+  }
+}
+
+@media (max-width: 768px) {
+  .About-info {
+    padding: 30px;
+  }
+
+  .About-info img {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 300px; /* Limit the size of the image */
+  }
+
+  .About-intro {
+    text-align: left; /* Keep text aligned to the left */
+    width: 100%; /* Full width for text */
+  }
+
+  .About-intro h1 {
+    font-size: 2rem; /* Smaller heading for mobile */
+  }
+
+  .About-intro p {
+    font-size: 1.2rem; /* Smaller text for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .About-info {
+    padding: 20px;
+  }
+
+  .About-intro h1 {
+    font-size: 1.8rem; /* Smaller heading for very small devices */
+  }
+
+  .About-intro p {
+    font-size: 1rem; /* Adjust font size for small screens */
+  }
+}

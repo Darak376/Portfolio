@@ -1,0 +1,110 @@
+.projects-container {
+  padding: 40px;
+  text-align: left;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Style for project category menu */
+.projects-menu {
+  display: flex;
+  gap: 20px; /* Gap between menu buttons */
+  margin-bottom: 20px;
+}
+
+/* Common button styles for all menu options */
+.projects-menu button {
+  background-color: #f0f0f0; /* Default button background */
+  border: none;
+  padding: 10px 20px; /* Consistent padding for all buttons */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem; /* Font size for the menu */
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+  color: #000; /* Default color */
+}
+
+/* Style for the active category button (selected) */
+.projects-menu .active {
+  background-color: gold; /* Gold background for active button */
+  color: white; /* White text for the active button */
+}
+
+/* Hover effect for all buttons */
+.projects-menu button:hover {
+  background-color: #e0e0e0; /* Change background on hover */
+}
+
+/* Grid container for projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 projects in a row */
+  gap: 20px;
+  max-height: 500px; /* Fixed height to show two rows */
+  overflow-y: auto; /* Vertical scroll to view more projects */
+  padding-right: 10px; /* Padding to avoid scrollbar clipping */
+}
+
+/* Individual project card */
+.project-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Align content to the left */
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image for the project */
+.project-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Project title */
+.project-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Link to the live project */
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+/* Technology logos below each project */
+.project-tech {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tech-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  padding: 5px;
+  transition: background-color 0.3s;
+}
+
+.tech-logo:hover {
+  background-color: gold;
+}

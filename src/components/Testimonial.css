@@ -1,0 +1,46 @@
+/* The outer wrapper for the testimonials section */
+.testimonials-wrapper {
+  background-color: white; /* Single white background for the entire section */
+  padding: 50px 0; /* Padding around the slider */
+}
+
+/* The container for the title and slider */
+.testimonials-container {
+  width: 90%; /* Make sure the slider takes up a reasonable width */
+  margin: 0 auto; /* Center the entire container */
+  text-align: center;
+}
+
+/* Title for the testimonials section */
+.title {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Individual testimonial item */
+.testimonial {
+  padding: 20px;
+  margin: 0 15px; /* Equal space between each testimonial */
+}
+
+/* Testimonial text */
+.testimonial-text {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Author name */
+.testimonial-author {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Stars section */
+.stars {
+  margin-top: 10px;
+  color: #f39c12; /* Gold star color */
+}

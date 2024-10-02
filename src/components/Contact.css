@@ -1,0 +1,100 @@
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.intro-resume-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.intro-sentence p {
+  font-size: 18px;
+  color: #333;
+}
+
+.resume-btn {
+  background-color: #ffb400;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contact-content {
+  display: flex;
+  gap: 40px;
+}
+
+.contact-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contact-form-section {
+  max-width: 600px;
+}
+
+.contact-form-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-form-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.contact-form-section form input,
+.contact-form-section form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form-section form button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer-social a {
+  margin: 0 10px;
+  font-size: 24px; /* Adjust icon size */
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: #ffb400;
+}
+
+.footer p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Add FontAwesome for social media icons */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
